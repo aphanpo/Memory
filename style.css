@@ -1,0 +1,50 @@
+html {box-sizing:border-box;}
+*,* :after, *:before {box-sizing:inherit;}
+
+body {
+	margin:0;
+}
+.container {
+    width: 1200px;
+	display: flex;
+	align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: auto;
+}
+
+
+.deck {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 20px;
+
+}
+
+.card {
+	font-size: 0px;
+	width: 200px;
+	height: 150px;
+	text-align: center;
+	border: 1px solid purple;
+	border-radius: 4px; 
+	padding:21px;
+	margin-bottom: 15px;
+	background: purple;
+	color: white;
+}
+
+.deck .card.open {
+    background: black;
+}
+
+.deck .card.show {
+    font-size: 50px;
+}
+
+.deck .card.match {
+    background: lavender;
+    color: purple;
+}
